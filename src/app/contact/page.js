@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-const About = () => {
+const page = () => {
   return (
     <>
-     <h2>About US</h2> 
+     <h2>Contact Page</h2> 
      <Link href='/home'>Home Page</Link>
     </>
   );
 }
 
-export default About;
+export default page;
