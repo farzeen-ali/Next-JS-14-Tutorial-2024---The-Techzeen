@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const EventsFunctionsState = () => {
     const [firstName, setFirstName] = useState('Ali');
     // const sayHello = (name) => {
-    //     alert(`Hello ${name}`);
+    //     alert(`Hello ${name}`); 
     // }
     // let firstName = 'Ali';
     const changeName = () => {
