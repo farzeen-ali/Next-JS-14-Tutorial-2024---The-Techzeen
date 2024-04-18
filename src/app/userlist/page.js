@@ -12,7 +12,7 @@ const Users = () => {
     }, [])
   return (
     <>
-     <h2>Users List | Fetch Data With API</h2> 
+     <h2>Users List | Fetch Data With API</h2>
      {
         users.map((user) => <li key={user.id}>{user.username}</li>)
      }
