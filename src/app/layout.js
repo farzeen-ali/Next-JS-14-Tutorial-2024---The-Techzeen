@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-page-custom-font */
+/* eslint-disable @next/next/no-css-tags */
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./style.css";
@@ -21,6 +21,10 @@ export default function RootLayout({ children }) {
     {/* <head>
       <script src="/feature.js" async />
     </head> */}
+    <head>
+      <link rel="stylesheet" href="/style.css" />
+      <script src="/script.js" async />
+    </head> 
       <body className={inter.className}>
       {children}</body>
     </html>
