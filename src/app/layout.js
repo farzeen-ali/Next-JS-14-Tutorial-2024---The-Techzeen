@@ -21,10 +21,10 @@ export default function RootLayout({ children }) {
     {/* <head>
       <script src="/feature.js" async />
     </head> */}
-    <head>
+    {/* <head>
       <link rel="stylesheet" href="/style.css" />
       <script src="/script.js" async />
-    </head> 
+    </head>  */}
       <body className={inter.className}>
       {children}</body>
     </html>
