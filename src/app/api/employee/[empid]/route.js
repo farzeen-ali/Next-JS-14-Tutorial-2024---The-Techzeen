@@ -8,3 +8,13 @@ export const GET = (req, value) => {
     let result = empData.length == 0 ? {result: 'No Employee Found'} : {result: empData}
     return NextResponse.json(result)
 }
+
+export const DELETE = (req, value) => {
+    let employeeId = value.params.empid;
+    if (employeeId) {
+        return NextResponse.json({result: "Employee Info Deleted Successfully"}, {status: 200})
+    }
+    else {
+        return NextResponse.json({result: "Employee Not Found"}, {status: 404})
+    }
+}
