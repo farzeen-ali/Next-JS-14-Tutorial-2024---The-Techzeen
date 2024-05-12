@@ -7,7 +7,7 @@ export const GET = (req, value) => {
     const empData = employee.filter((item) => item.employeeId == value.params.empid)
     let result = empData.length == 0 ? {result: 'No Employee Found'} : {result: empData}
     return NextResponse.json(result)
-}
+}  
 
 export const DELETE = (req, value) => {
     let employeeId = value.params.empid;
