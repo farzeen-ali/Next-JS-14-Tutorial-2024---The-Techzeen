@@ -5,7 +5,7 @@ export const GET = (req, value) => {
     // console.log(value.params.empid)
     // const data = employee;
     const empData = employee.filter((item) => item.employeeId == value.params.empid)
-    let result = empData.length == 0 ? {result: 'No Employee Found'} : {result: empData}
+    let result = empData.length == 0 ? {result: 'No Employee Found'} : {result: empData[0]}
     return NextResponse.json(result)
 }  
 
