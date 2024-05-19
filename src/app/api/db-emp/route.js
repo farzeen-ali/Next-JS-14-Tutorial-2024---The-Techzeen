@@ -21,5 +21,5 @@ export const POST = async (req) => {
     // })
     const employeeData = new Employee(payload)
     const response = await employeeData.save();
-    return NextResponse.json({result: response})
+    return NextResponse.json({result: response, success:true})
 }
