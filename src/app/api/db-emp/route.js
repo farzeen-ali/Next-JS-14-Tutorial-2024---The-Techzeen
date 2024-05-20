@@ -8,7 +8,7 @@ export const GET = async () => {
     const empData = await Employee.find();
 
     // return NextResponse.json({result: "Success"})
-    return NextResponse.json({result: empData})
+    return NextResponse.json({result: empData, success:true})
 }
 
 export const POST = async (req) => {
