@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const getData = async () => {
-    let data = await fetch('http://localhost:3000/api/db-emp');
+    let data = await fetch('http://localhost:3000/api/db-emp', { cache: 'no-store' });
     data = await data.json();
     if (data.success) {
         return data.result;
