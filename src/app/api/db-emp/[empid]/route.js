@@ -17,3 +17,14 @@ export const PUT = async (req, value) => {
     const result = await Employee.findOneAndUpdate(id,payload)
     return NextResponse.json({result, success: true})
 }
+
+export const GET = async (req, value) => {
+    // for id
+    const empID = value.params.empid;
+    const id = {_id:empID};
+    //For Mongo DB 
+    await mongoose.connect(connectionString);
+    //getting result
+    const result = await Employee.findById(id)
+    return NextResponse.json({result, success: true})
+}

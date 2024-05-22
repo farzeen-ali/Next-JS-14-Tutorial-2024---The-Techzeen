@@ -32,6 +32,7 @@ const GetEmployee = async () => {
                         <td>{item.name}</td>
                         <td>{item.salary}</td>
                         <td>{item.department}</td>
+                        <td><Link href={`mongo-get-emp/${item._id}`}>Edit</Link></td>
                     </tr>
                 ))
             }
