@@ -1,3 +1,4 @@
+import Delete from '@/components/Delete';
 import Link from 'next/link';
 import React from 'react';
 
@@ -23,6 +24,7 @@ const GetEmployee = async () => {
                 <td>Name</td>
                 <td>Salary</td>
                 <td>Department</td>
+                <td>Actions</td>
             </tr>
         </thead>
         <tbody>
@@ -33,6 +35,7 @@ const GetEmployee = async () => {
                         <td>{item.salary}</td>
                         <td>{item.department}</td>
                         <td><Link href={`mongo-get-emp/${item._id}`}>Edit</Link></td>
+                        <td><Delete id={item._id} /></td>
                     </tr>
                 ))
             }
