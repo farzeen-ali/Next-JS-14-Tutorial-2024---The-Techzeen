@@ -3,7 +3,6 @@ import { Image } from "@/lib/database/model/image";
 import mongoose from "mongoose"
 import { NextResponse } from "next/server";
 
-
 export const POST = async (request) => {
     try {
         await mongoose.connect(connectionString);
